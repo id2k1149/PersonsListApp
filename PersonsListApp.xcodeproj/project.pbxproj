@@ -15,6 +15,7 @@
 		50EC7D9B291BE70B0067648D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EC7D9A291BE70B0067648D /* Person.swift */; };
 		50EC7DA5291BE96B0067648D /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EC7DA4291BE96B0067648D /* DataStore.swift */; };
 		50EC7DA7291BF5190067648D /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EC7DA6291BF5190067648D /* PersonListViewController.swift */; };
+		50EC7DA9291C0D6E0067648D /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EC7DA8291C0D6E0067648D /* PersonInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		50EC7D9A291BE70B0067648D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		50EC7DA4291BE96B0067648D /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		50EC7DA6291BF5190067648D /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		50EC7DA8291C0D6E0067648D /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				50EC7DA6291BF5190067648D /* PersonListViewController.swift */,
+				50EC7DA8291C0D6E0067648D /* PersonInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50EC7DA5291BE96B0067648D /* DataStore.swift in Sources */,
+				50EC7DA9291C0D6E0067648D /* PersonInfoViewController.swift in Sources */,
 				50EC7D84291BE62F0067648D /* AppDelegate.swift in Sources */,
 				50EC7DA7291BF5190067648D /* PersonListViewController.swift in Sources */,
 				50EC7D9B291BE70B0067648D /* Person.swift in Sources */,

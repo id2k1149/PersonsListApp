@@ -13,7 +13,7 @@ class PersonListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 80
+        tableView.rowHeight = 70
     }
 
     // MARK: - Table view data source
