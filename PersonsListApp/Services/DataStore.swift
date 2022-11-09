@@ -8,7 +8,7 @@
 import Foundation
 
 struct DataStore {
-    let firstNameList: [String]
+    let firstNameList: [String] 
     let lastNameList: [String]
     let phoneNumberList: [String]
     let emailList: [String]
