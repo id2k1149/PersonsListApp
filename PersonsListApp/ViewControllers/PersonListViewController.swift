@@ -70,10 +70,10 @@ class PersonListViewController: UITableViewController {
     }
     */
 
-    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        personInfoVC.person = personList[indexPath.row]
     }
 }

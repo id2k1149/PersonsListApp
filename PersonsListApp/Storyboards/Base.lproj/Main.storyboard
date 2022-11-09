@@ -116,17 +116,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Name Surname" id="ZOC-ga-10D"/>
+                    <connections>
+                        <outlet property="email" destination="RDU-JA-ccx" id="rdR-nt-PKX"/>
+                        <outlet property="phoneNumber" destination="RW5-eP-lyq" id="R7A-CK-ldu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEx-bx-wUW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.072463768116" y="-96.428571428571431"/>
+            <point key="canvasLocation" x="1103" y="-96"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OpN-uP-gak">
             <objects>
                 <navigationController id="hAg-la-7QC" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="rEZ-tj-8cJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
