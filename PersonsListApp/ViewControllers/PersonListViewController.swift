@@ -13,6 +13,7 @@ class PersonListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 80
     }
 
     // MARK: - Table view data source
@@ -20,15 +21,16 @@ class PersonListViewController: UITableViewController {
         personList.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let person = personList[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
+        
         var content = cell.defaultContentConfiguration()
         content.text = "\(person.firstName) \(person.lastName)"
         
         cell.contentConfiguration = content
+        
         return cell
     }
     
