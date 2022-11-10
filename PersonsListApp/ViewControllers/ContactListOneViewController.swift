@@ -24,7 +24,7 @@ class ContactListOneViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let person = personList[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "firstView", for: indexPath)
         
         var content = cell.defaultContentConfiguration()
         content.text = person.fullName
