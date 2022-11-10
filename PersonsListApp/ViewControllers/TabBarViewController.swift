@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
         guard let contactListOneVC = viewControllers?.first as? ContactListOneViewController else { return }
         contactListOneVC.personList = personList
         
-        guard let contactListTwoVC = viewControllers?.first as? ContactListTwoViewController else { return }
+        guard let contactListTwoVC = viewControllers?.last as? ContactListTwoViewController else { return }
         contactListTwoVC.personList = personList
 
     }

@@ -55,7 +55,7 @@
         <!--Root View Controller-->
         <scene sceneID="JF1-vq-xud">
             <objects>
-                <tableViewController id="REG-9E-W8A" sceneMemberID="viewController">
+                <tableViewController id="REG-9E-W8A" customClass="ContactListTwoViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="yga-vC-tX1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
