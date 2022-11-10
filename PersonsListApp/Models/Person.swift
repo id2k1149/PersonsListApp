@@ -23,7 +23,7 @@ struct Person {
         
         var personList = [Person]()
         
-        for index in 0...(dataStore.firstNameList.count - 1) {
+        for index in 0..<dataStore.firstNameList.count {
             let person = Person(firstName: dataStore.firstNameList[index],
                                 lastName: dataStore.lastNameList[index],
                                 phoneNumber: dataStore.phoneNumberList[index],
