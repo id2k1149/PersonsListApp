@@ -11,7 +11,7 @@
         <!--Persons List-->
         <scene sceneID="B7k-aT-eAd">
             <objects>
-                <tableViewController id="fHX-5r-2A0" customClass="PersonListViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fHX-5r-2A0" customClass="ContactListOneViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Pg2-S2-uEG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,6 +181,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="PS5-A4-MGa"/>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oDN-T9-HLa">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
