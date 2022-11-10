@@ -13,11 +13,9 @@ class ContactListTwoViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 70
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         personList.count
     }
@@ -33,8 +31,6 @@ class ContactListTwoViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondView", for: indexPath)
-
-        
 
         return cell
     }
