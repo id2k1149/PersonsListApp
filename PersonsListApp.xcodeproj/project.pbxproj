@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		507DA9ED291D5F3D005BC675 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507DA9EC291D5F3D005BC675 /* TabBarViewController.swift */; };
+		507DA9EF291D64FC005BC675 /* ContactListTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507DA9EE291D64FC005BC675 /* ContactListTwoViewController.swift */; };
 		50EC7D84291BE62F0067648D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EC7D83291BE62F0067648D /* AppDelegate.swift */; };
 		50EC7D86291BE62F0067648D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EC7D85291BE62F0067648D /* SceneDelegate.swift */; };
 		50EC7D8B291BE62F0067648D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EC7D89291BE62F0067648D /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		507DA9EC291D5F3D005BC675 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		507DA9EE291D64FC005BC675 /* ContactListTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTwoViewController.swift; sourceTree = "<group>"; };
 		50EC7D80291BE62F0067648D /* PersonsListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50EC7D83291BE62F0067648D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50EC7D85291BE62F0067648D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				507DA9EC291D5F3D005BC675 /* TabBarViewController.swift */,
 				50EC7DA6291BF5190067648D /* ContactListOneViewController.swift */,
+				507DA9EE291D64FC005BC675 /* ContactListTwoViewController.swift */,
 				50EC7DA8291C0D6E0067648D /* PersonInfoViewController.swift */,
 			);
 			path = ViewControllers;
@@ -196,6 +199,7 @@
 				50EC7DA7291BF5190067648D /* ContactListOneViewController.swift in Sources */,
 				507DA9ED291D5F3D005BC675 /* TabBarViewController.swift in Sources */,
 				50EC7D9B291BE70B0067648D /* Person.swift in Sources */,
+				507DA9EF291D64FC005BC675 /* ContactListTwoViewController.swift in Sources */,
 				50EC7D86291BE62F0067648D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
