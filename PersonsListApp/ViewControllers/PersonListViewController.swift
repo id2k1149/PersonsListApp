@@ -27,7 +27,7 @@ class PersonListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
         
         var content = cell.defaultContentConfiguration()
-        content.text = "\(person.firstName) \(person.lastName)"
+        content.text = person.fullName
         
         cell.contentConfiguration = content
         

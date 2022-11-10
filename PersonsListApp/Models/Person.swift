@@ -11,6 +11,10 @@ struct Person {
     let phoneNumber: String
     let email: String
     
+    var fullName: String {
+        "\(firstName) \(lastName)"
+    }
+    
     static func getPersonList() -> [Person] {
         let dataStore = DataStore(firstNameList: DataStore.getFirstNameList(),
                                   lastNameList: DataStore.getLastNameList(),
