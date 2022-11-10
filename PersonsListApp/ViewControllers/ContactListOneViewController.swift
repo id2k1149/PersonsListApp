@@ -26,10 +26,10 @@ class ContactListOneViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "firstView", for: indexPath)
         
-        var content = cell.defaultContentConfiguration()
-        content.text = person.fullName
+        var fullName = cell.defaultContentConfiguration()
+        fullName.text = person.fullName
         
-        cell.contentConfiguration = content
+        cell.contentConfiguration = fullName
         
         return cell
     }

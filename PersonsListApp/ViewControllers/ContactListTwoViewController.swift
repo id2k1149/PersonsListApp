@@ -36,7 +36,14 @@ class ContactListTwoViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondView", for: indexPath)
         
         var content = cell.defaultContentConfiguration()
-        content.text = person.phoneNumber
+        
+        if indexPath.item == 0 {
+            content.text = person.phoneNumber
+        }
+        
+        if indexPath.item == 1 {
+            content.text = person.email
+        }
         
         cell.contentConfiguration = content
 
