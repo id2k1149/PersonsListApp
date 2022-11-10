@@ -175,7 +175,7 @@
         <!--Persons List-->
         <scene sceneID="xdQ-SF-WyT">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yhY-BT-afE" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yhY-BT-afE" customClass="TabBarViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Persons List" id="MqG-1Z-sPS">
                         <barButtonItem key="backBarButtonItem" title="Back" id="PS5-A4-MGa"/>
