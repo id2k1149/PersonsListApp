@@ -39,10 +39,12 @@ class ContactListTwoViewController: UITableViewController {
         
         if indexPath.item == 0 {
             content.text = person.phoneNumber
+            content.image = UIImage(systemName: "phone")
         }
         
         if indexPath.item == 1 {
             content.text = person.email
+            content.image = UIImage(systemName: "tray")
         }
         
         cell.contentConfiguration = content
