@@ -11,15 +11,19 @@ struct Person {
     let phoneNumber: String
     let email: String
     
+    var fullName: String {
+        "\(firstName) \(lastName)"
+    }
+    
     static func getPersonList() -> [Person] {
-        let dataStore = DataStore(firstNameList: DataStore.getFirstNameList(),
-                                  lastNameList: DataStore.getLastNameList(),
-                                  phoneNumberList: DataStore.getPhoneNumberList(),
-                                  emailList: DataStore.getEmailList())
+        let dataStore = DataStore(firstNameList: DataStore.getFirstNameShuffledList(),
+                                  lastNameList: DataStore.getLastNameShuffledList(),
+                                  phoneNumberList: DataStore.getPhoneNumberShuffledList(),
+                                  emailList: DataStore.getEmailShuffledList())
         
         var personList = [Person]()
         
-        for index in 0...(dataStore.firstNameList.count - 1) {
+        for index in 0..<dataStore.firstNameList.count {
             let person = Person(firstName: dataStore.firstNameList[index],
                                 lastName: dataStore.lastNameList[index],
                                 phoneNumber: dataStore.phoneNumberList[index],
