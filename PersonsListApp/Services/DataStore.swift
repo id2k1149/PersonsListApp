@@ -15,7 +15,7 @@ struct DataStore {
 }
 
 extension DataStore {
-    static func getFirstNameList() -> [String] {
+    static func getFirstNameShuffledList() -> [String] {
         [
             "Bruce",
             "Sharon",
@@ -30,7 +30,7 @@ extension DataStore {
             .shuffled()
     }
     
-    static func getLastNameList() -> [String] {
+    static func getLastNameShuffledList() -> [String] {
         [
             "Pennyworth",
             "Dow",
@@ -45,32 +45,32 @@ extension DataStore {
             .shuffled()
     }
     
-    static func getPhoneNumberList() -> [String] {
+    static func getPhoneNumberShuffledList() -> [String] {
         [
-            "+7 495 111-1111",
-            "+7 495 222-2222",
-            "+7 495 333-3333",
-            "+7 495 444-4444",
-            "+7 495 555-5555",
-            "+7 495 666-6666",
-            "+7 495 777-7777",
-            "+7 495 888-8888",
-            "+7 495 999-9999"
+            "+1 000 111-1111",
+            "+1 000 222-2222",
+            "+1 000 333-3333",
+            "+1 000 444-4444",
+            "+1 000 555-5555",
+            "+1 000 666-6666",
+            "+1 000 777-7777",
+            "+1 000 888-8888",
+            "+1 000 999-9999"
         ]
             .shuffled()
     }
     
-    static func getEmailList() -> [String] {
+    static func getEmailShuffledList() -> [String] {
         [
-            "mail_1@mail.ru",
-            "mail_2@mail.ru",
-            "mail_3@mail.ru",
-            "mail_4@mail.ru",
-            "mail_5@mail.ru",
-            "mail_6@mail.ru",
-            "mail_7@mail.ru",
-            "mail_8@mail.ru",
-            "mail_9@mail.ru"
+            "mail_1@mail.mail",
+            "mail_2@mail.mail",
+            "mail_3@mail.mail",
+            "mail_4@mail.mail",
+            "mail_5@mail.mail",
+            "mail_6@mail.mail",
+            "mail_7@mail.mail",
+            "mail_8@mail.mail",
+            "mail_9@mail.mail"
         ]
             .shuffled()
     }

@@ -16,10 +16,10 @@ struct Person {
     }
     
     static func getPersonList() -> [Person] {
-        let dataStore = DataStore(firstNameList: DataStore.getFirstNameList(),
-                                  lastNameList: DataStore.getLastNameList(),
-                                  phoneNumberList: DataStore.getPhoneNumberList(),
-                                  emailList: DataStore.getEmailList())
+        let dataStore = DataStore(firstNameList: DataStore.getFirstNameShuffledList(),
+                                  lastNameList: DataStore.getLastNameShuffledList(),
+                                  phoneNumberList: DataStore.getPhoneNumberShuffledList(),
+                                  emailList: DataStore.getEmailShuffledList())
         
         var personList = [Person]()
         
