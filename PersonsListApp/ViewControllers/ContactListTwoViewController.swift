@@ -11,10 +11,6 @@ class ContactListTwoViewController: UITableViewController {
     
     var personList: [Person]!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         personList.count
@@ -39,9 +35,7 @@ class ContactListTwoViewController: UITableViewController {
         if indexPath.item == 0 {
             content.text = person.phoneNumber
             content.image = UIImage(systemName: "phone")
-        }
-        
-        if indexPath.item == 1 {
+        } else {
             content.text = person.email
             content.image = UIImage(systemName: "tray")
         }
