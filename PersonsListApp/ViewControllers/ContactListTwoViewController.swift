@@ -47,13 +47,22 @@ extension ContactListTwoViewController {
     
     override func tableView(_ tableView: UITableView,
                             viewForHeaderInSection section: Int) -> UIView? {
-        let fullNameLabel = UILabel()
+        let fullNameLabel = UILabel(
+            frame: CGRect(
+                x: 16,
+                y: 3,
+                width: 300,
+                height: 20
+            )
+        )
         fullNameLabel.text = personList[section].fullName
-        fullNameLabel.font = UIFont.boldSystemFont(ofSize: 17)
+        fullNameLabel.font = UIFont.boldSystemFont(ofSize: 16)
         fullNameLabel.textColor = .white
-        fullNameLabel.textAlignment = .center
         
-        return fullNameLabel
+        let contentView = UIView()
+        contentView.addSubview(fullNameLabel)
+        
+        return contentView
     }
     
     override func tableView(_ tableView: UITableView,
