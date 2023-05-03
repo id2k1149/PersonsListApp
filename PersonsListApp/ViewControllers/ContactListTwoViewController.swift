@@ -49,6 +49,10 @@ extension ContactListTwoViewController {
                             viewForHeaderInSection section: Int) -> UIView? {
         let fullNameLabel = UILabel()
         fullNameLabel.text = personList[section].fullName
+        fullNameLabel.font = UIFont.boldSystemFont(ofSize: 17)
+        fullNameLabel.textColor = .white
+        fullNameLabel.textAlignment = .center
+        
         return fullNameLabel
     }
     
