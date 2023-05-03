@@ -20,11 +20,25 @@ struct Person {
         
         var personList = [Person]()
         
-        for index in 0..<dataStore.firstNameList.count {
-            let person = Person(firstName: dataStore.firstNameList[index],
-                                lastName: dataStore.lastNameList[index],
-                                phoneNumber: dataStore.phoneNumberList[index],
-                                email: dataStore.emailList[index])
+        let names = dataStore.firstNameList.shuffled()
+        let lastNames = dataStore.lastNameList.shuffled()
+        let phoneNumbers = dataStore.phoneNumberList.shuffled()
+        let emails = dataStore.emailList.shuffled()
+        
+        let iterationCount = min(
+            names.count,
+            lastNames.count,
+            phoneNumbers.count,
+            emails.count
+        )
+        
+        for index in 0..<iterationCount {
+            let person = Person(
+                firstName: names[index],
+                lastName: lastNames[index],
+                phoneNumber: phoneNumbers[index],
+                email: emails[index]
+            )
             personList.append(person)
         }
         
