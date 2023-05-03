@@ -11,11 +11,6 @@ class ContactListOneViewController: UITableViewController {
     
     var personList: [Person]!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.rowHeight = 70
-    }
-
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         personList.count
