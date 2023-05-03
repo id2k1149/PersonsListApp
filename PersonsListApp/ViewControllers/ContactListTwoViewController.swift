@@ -9,7 +9,7 @@ import UIKit
 
 class ContactListTwoViewController: UITableViewController {
     
-    var personList: [Person]!
+    var personList: [Person] = []
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {

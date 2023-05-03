@@ -9,7 +9,7 @@ import UIKit
 
 class ContactListOneViewController: UITableViewController {
     
-    var personList: [Person]!
+    var personList: [Person] = []
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
