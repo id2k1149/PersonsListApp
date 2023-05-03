@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="409" y="-898"/>
         </scene>
-        <!--Persons List-->
+        <!--Tab Bar -->
         <scene sceneID="xdQ-SF-WyT">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yhY-BT-afE" customClass="TabBarViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yhY-BT-afE" userLabel="Tab Bar " customClass="TabBarViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Persons List" id="MqG-1Z-sPS">
                         <barButtonItem key="backBarButtonItem" title="Back" id="PS5-A4-MGa"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="1161" y="-897"/>
         </scene>
-        <!--Persons List-->
+        <!--Persons List One-->
         <scene sceneID="B7k-aT-eAd">
             <objects>
-                <tableViewController id="fHX-5r-2A0" customClass="ContactListOneViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fHX-5r-2A0" userLabel="Persons List One" customClass="ContactListOneViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Pg2-S2-uEG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
                             <outlet property="delegate" destination="fHX-5r-2A0" id="Egw-lo-3BO"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" id="OQN-cq-3Tc"/>
+                    <tabBarItem key="tabBarItem" title="Contacts (name only)" image="person.2.circle" catalog="system" id="OQN-cq-3Tc"/>
                     <navigationItem key="navigationItem" title="Persons List" id="j4I-io-aTs">
                         <barButtonItem key="backBarButtonItem" title="Back" id="TfQ-W4-wmc"/>
                     </navigationItem>
@@ -155,10 +155,10 @@
             </objects>
             <point key="canvasLocation" x="829" y="777"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Persons List Two-->
         <scene sceneID="JF1-vq-xud">
             <objects>
-                <tableViewController id="REG-9E-W8A" customClass="ContactListTwoViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="REG-9E-W8A" userLabel="Persons List Two" customClass="ContactListTwoViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="yga-vC-tX1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,7 @@
                             <outlet property="delegate" destination="REG-9E-W8A" id="BG7-EK-hEB"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" id="Tdq-sq-KJt"/>
+                    <tabBarItem key="tabBarItem" title="Contacts (full info)" image="person.2.circle.fill" catalog="system" id="Tdq-sq-KJt"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="jJK-cr-2tQ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Hr-22-FuB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -187,7 +187,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.2.circle" catalog="system" width="128" height="123"/>
+        <image name="person.2.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

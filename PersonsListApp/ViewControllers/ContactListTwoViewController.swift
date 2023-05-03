@@ -30,12 +30,11 @@ class ContactListTwoViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let person = personList[indexPath.section]
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondView", for: indexPath)
         
         var content = cell.defaultContentConfiguration()
+        
+        let person = personList[indexPath.section]
         
         if indexPath.item == 0 {
             content.text = person.phoneNumber
