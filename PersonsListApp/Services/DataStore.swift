@@ -5,11 +5,15 @@
 //  Created by Max Franz Immelmann on 11/9/22.
 //
 
-struct DataStore {
-    let firstNameList: [String] 
-    let lastNameList: [String]
-    let phoneNumberList: [String]
-    let emailList: [String]
+class DataStore {
+    static let shared = DataStore()
+    
+    let firstNameList: [String] = getFirstNameShuffledList()
+    let lastNameList: [String] = getLastNameShuffledList()
+    let phoneNumberList: [String] = getPhoneNumberShuffledList()
+    let emailList: [String] = getEmailShuffledList()
+    
+    private init() {}
 }
 
 extension DataStore {

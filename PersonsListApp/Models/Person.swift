@@ -16,12 +16,7 @@ struct Person {
     }
     
     static func getPersonList() -> [Person] {
-        let dataStore = DataStore(
-            firstNameList: DataStore.getFirstNameShuffledList(),
-            lastNameList: DataStore.getLastNameShuffledList(),
-            phoneNumberList: DataStore.getPhoneNumberShuffledList(),
-            emailList: DataStore.getEmailShuffledList()
-        )
+        let dataStore = DataStore.shared
         
         var personList = [Person]()
         
