@@ -13,13 +13,14 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setup()
+    }
+    
+    private func setup() {
         guard let contactListOneVC = viewControllers?[0] as? ContactListOneViewController else { return }
         contactListOneVC.personList = personList
 
         guard let contactListTwoVC = viewControllers?[1] as? ContactListTwoViewController else { return }
         contactListTwoVC.personList = personList
-
     }
-    
 }
