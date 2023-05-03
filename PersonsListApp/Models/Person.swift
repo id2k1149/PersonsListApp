@@ -15,6 +15,10 @@ struct Person {
         "\(firstName) \(lastName)"
     }
     
+    var rows: [String] {
+        [phoneNumber, email]
+    }
+    
     static func getPersonList() -> [Person] {
         let dataStore = DataStore.shared
         

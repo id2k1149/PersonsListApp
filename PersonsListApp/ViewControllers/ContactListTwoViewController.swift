@@ -15,16 +15,11 @@ class ContactListTwoViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         personList.count
     }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        personList[section].fullName
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        personList[section].rows.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondView", for: indexPath)
         
@@ -32,21 +27,29 @@ class ContactListTwoViewController: UITableViewController {
         
         let person = personList[indexPath.section]
         
-        if indexPath.item == 0 {
-            content.text = person.phoneNumber
-            content.image = UIImage(systemName: "phone")
-        } else {
-            content.text = person.email
-            content.image = UIImage(systemName: "tray")
-        }
+        content.text = person.rows[indexPath.row]
+        
+        content.image = indexPath.row == 0
+        ? UIImage(systemName: "phone")
+        : UIImage(systemName: "tray")
         
         cell.contentConfiguration = content
 
         return cell
     }
-    
+}
+
+extension ContactListTwoViewController {
     override func tableView(_ tableView: UITableView,
                             didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    override func tableView(_ tableView: UITableView,
+                            viewForHeaderInSection section: Int) -> UIView? {
+        let fullNameLabel = UILabel()
+        fullNameLabel.text = personList[section].fullName
+        return fullNameLabel
+    }
+    
 }
