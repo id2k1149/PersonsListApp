@@ -52,4 +52,9 @@ extension ContactListTwoViewController {
         return fullNameLabel
     }
     
+    override func tableView(_ tableView: UITableView,
+                            willDisplayHeaderView view: UIView,
+                            forSection section: Int) {
+        view.backgroundColor = .gray
+    }
 }
